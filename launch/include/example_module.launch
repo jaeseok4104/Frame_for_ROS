@@ -1,0 +1,5 @@
+<launch>
+    <arg name="project" default="frame"/>
+    
+    <node pkg="$(arg project)" type="$(arg project)_example" name="$(arg project)_example" output="screen" respwan="true"/>
+</launch>
